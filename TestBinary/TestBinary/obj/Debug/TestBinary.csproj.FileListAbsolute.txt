@@ -1,0 +1,10 @@
+G:\prg\TestBinary\TestBinary\bin\Debug\TestBinary.exe.config
+G:\prg\TestBinary\TestBinary\bin\Debug\TestBinary.exe
+G:\prg\TestBinary\TestBinary\bin\Debug\TestBinary.pdb
+G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.csprojAssemblyReference.cache
+G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.Form1.resources
+G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.Properties.Resources.resources
+G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.GenerateResource.cache
+G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.CoreCompileInputs.cache
+G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.exe
+G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.pdb
