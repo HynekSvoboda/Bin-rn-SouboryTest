@@ -8,3 +8,14 @@ G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.GenerateResource.cache
 G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.CoreCompileInputs.cache
 G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.exe
 G:\prg\TestBinary\TestBinary\obj\Debug\TestBinary.pdb
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.AssemblyReference.cache
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.SuggestedBindingRedirects.cache
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.Form1.resources
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.Properties.Resources.resources
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.GenerateResource.cache
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.csproj.CoreCompileInputs.cache
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.exe
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\obj\Debug\TestBinary.pdb
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\bin\Debug\TestBinary.exe.config
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\bin\Debug\TestBinary.exe
+C:\Users\hynko\Source\Repos\TestBinary\TestBinary\TestBinary\bin\Debug\TestBinary.pdb
