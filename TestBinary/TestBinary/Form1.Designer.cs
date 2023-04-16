@@ -73,7 +73,7 @@
             this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(370, 165);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(180, 24);
+            this.listBox1.Size = new System.Drawing.Size(207, 24);
             this.listBox1.TabIndex = 1;
             // 
             // numericUpDown1
@@ -249,7 +249,7 @@
             this.listBox2.ForeColor = System.Drawing.Color.White;
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 20;
-            this.listBox2.Location = new System.Drawing.Point(672, 30);
+            this.listBox2.Location = new System.Drawing.Point(707, 30);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(120, 284);
             this.listBox2.TabIndex = 14;
@@ -259,7 +259,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(556, 30);
+            this.textBox2.Location = new System.Drawing.Point(591, 30);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -271,7 +271,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(704, 7);
+            this.label6.Location = new System.Drawing.Point(739, 7);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 20);
             this.label6.TabIndex = 16;
@@ -282,7 +282,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(576, 7);
+            this.label7.Location = new System.Drawing.Point(611, 7);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 20);
             this.label7.TabIndex = 17;
@@ -295,7 +295,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(370, 209);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(180, 73);
+            this.button5.Size = new System.Drawing.Size(207, 73);
             this.button5.TabIndex = 19;
             this.button5.Text = "Vážený průměr a výpis";
             this.button5.UseVisualStyleBackColor = false;
@@ -306,7 +306,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(869, 345);
+            this.ClientSize = new System.Drawing.Size(990, 345);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
