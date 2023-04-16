@@ -26,7 +26,6 @@ namespace TestBinary
             label2.Visible = false;
             button2.Visible = false;
             button3.Visible = false;
-            button4.Visible = false;
             button5.Visible = false;
         }
 
@@ -46,7 +45,6 @@ namespace TestBinary
             label1.Visible = true;
             znamky= "";
             label2.Visible = true;
-            button2.Enabled = true;
             button2.Visible = true;
             listBox1.Items.Clear();
             }
@@ -62,7 +60,7 @@ namespace TestBinary
                 if(pocet==pocetznamek)
                 {
                     listBox1.Items.Add(znamky);
-                    button2.Enabled = false;
+                    button2.Visible = false;
                     button3.Visible = true;
                 }
             }
@@ -83,32 +81,13 @@ namespace TestBinary
             tok.Close();
             textBox1.Text = "";
             listBox1.Items.Clear();
-            button4.Visible = true;
             button5.Visible = true;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            listBox2.Items.Clear();
-            FileStream tok = new FileStream("seznam.dat", FileMode.Open, FileAccess.Read);
-            BinaryReader br = new BinaryReader(tok);
-            listBox2.Items.Clear();
-            textBox2.Text = "";
-            br.BaseStream.Position = 0;
-            while(br.BaseStream.Position<br.BaseStream.Length)
-            {
-                int pocet = br.ReadInt32();
-                string cteniznamky = br.ReadString();
-                listBox2.Items.Add(cteniznamky);
-                textBox2.Text += br.ReadString() + Environment.NewLine;
-            }
-            tok.Close();
+            button3.Visible = false;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             FileStream tok = new FileStream("seznam.dat", FileMode.Open, FileAccess.ReadWrite);
-            BinaryWriter bw = new BinaryWriter(tok);
             BinaryReader br = new BinaryReader(tok);
             double pocetcis = 0;
             double soucet = 0;
@@ -117,6 +96,8 @@ namespace TestBinary
             double pomocnacis = 0;
             double pomocnanas = 0;
             br.BaseStream.Position = 0;
+            listBox2.Items.Clear();
+            textBox2.Text = "";
 
             while (br.BaseStream.Position < br.BaseStream.Length)
             {
@@ -134,15 +115,16 @@ namespace TestBinary
                     {
                         if (znamkychar[i]!=' ')
                         {
-                            pocetcis++;
+                           
                             int cislo = Convert.ToInt32(znamkychar[i]) - 48;
                             if (pocitadlo % 2 == 0)
                             {
-                                pomocnacis =Convert.ToDouble( cislo);
+                                pomocnacis =Convert.ToDouble(cislo);
                             }
                             else
                             {
                                 pomocnanas = Convert.ToDouble(cislo);
+                                pocetcis += cislo;
                             }
                             if(pomocnacis!=0&&pomocnanas!=0)
                             {
@@ -152,20 +134,24 @@ namespace TestBinary
                             }
                             pocitadlo++;
                         }
-                    }
-                prumer = soucet / (pocetcis / 2);
-                if (prumer == 1) MessageBox.Show("Vychází ti čistá 1", "GRATULACE");
-                else if(prumer==4) MessageBox.Show("Vychází ti čistá 4", "UPOZORNĚNÍ");
-                else if(prumer==5)
-                {
-                    int delka = jmeno.Length;
-                    long pozice = bw.BaseStream.Position;
-                    bw.BaseStream.Position = br.BaseStream.Position;
-                    bw.BaseStream.Seek(-1*delka, SeekOrigin.End);
-                    bw.Write("John Doe");
-                    MessageBox.Show("Vychází ti čistá 5", "POZOR");
-                    br.BaseStream.Position=pozice;
                 }
+                prumer = soucet / (pocetcis);
+                if (prumer >=1&&prumer<=1.8) MessageBox.Show("Vychází ti 1", "GRATULACE");
+                else if(prumer>=3.6&&prumer<=4.2) MessageBox.Show("Vychází ti 4", "UPOZORNĚNÍ");
+                else if(prumer>4.2)
+                {
+                    BinaryWriter bw = new BinaryWriter(tok);
+                    bw.BaseStream.Position = br.BaseStream.Position;
+                    int delkajmena = jmeno.Length;
+                    string john = "John Doe";
+                    bw.BaseStream.Seek(-delkajmena, SeekOrigin.Current);
+                    jmeno = john;
+                    bw.Write(john);
+                    MessageBox.Show("Vychází ti 5", "POZOR");
+                }
+
+                listBox2.Items.Add(cteniznamky);
+                textBox2.Text += jmeno + Environment.NewLine;
             }
             tok.Close();
         }
